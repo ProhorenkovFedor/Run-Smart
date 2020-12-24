@@ -88,6 +88,25 @@
             line-height: 18px;
         }
     }
+
+    .consultation {
+        min-height: auto;
+        .title {
+            font-size: 30px;
+            line-height: 34px;
+            text-align: center;
+        }
+        &__description {
+            font-size: 18px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 355px;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -124,4 +143,17 @@
     .block-header {
         font-size: 24px;
     }
+    .consultation {
+        &__description {
+            font-size: 16px;
+        }
+        .title {
+            font-size: 19px;
+            line-height: 26px;
+        }
+        .feed-form {
+            width: 300px;
+        }
+    }
+
 }
