@@ -6,7 +6,21 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><img src="../img/right.png"></button>',
         responsive: [
             {
+                breakpoint: 992,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
                 breakpoint: 768,
+                settings: {
+                    dots: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 375,
                 settings: {
                     dots: true,
                     arrows: false
