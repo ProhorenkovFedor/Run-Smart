@@ -161,6 +161,22 @@
             margin: 0 auto;
         }
     }
+
+    .rewiew {
+        &__item {
+            flex-direction: column;
+        }
+        &__wrap {
+            margin-bottom: 30px;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+        &__info {
+            margin: 0;
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -213,6 +229,16 @@
     .catalog {
         &__tab {
             width: 270px;
+        }
+    }
+
+    .rewiew {
+        &__subtitle {
+            font-size: 11px;
+        }
+        &__text {
+            font-size: 14px;
+            margin-bottom: 10px;
         }
     }
 
