@@ -50,4 +50,15 @@ $(document).ready(function () {
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
         })
     })
+
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn();
+    });
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+    });
+    $('.button_mini').on('click', function () {
+        $('.overlay, #order').fadeIn();
+    });
+
 });
