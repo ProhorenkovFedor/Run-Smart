@@ -177,6 +177,26 @@
             text-align: center;
         }
     }
+
+    .footer {
+        &__info {
+            width: 350px;
+            padding: 30px 48px 40px 48px;
+            min-height: 260px;
+        }
+        &__addr {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__item {
+            width: 45px;
+            height: 45px;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -239,6 +259,13 @@
         &__text {
             font-size: 14px;
             margin-bottom: 10px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 300px;
+            padding-left: 30px;
+            padding-right: 30px;
         }
     }
 
