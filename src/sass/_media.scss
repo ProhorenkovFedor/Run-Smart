@@ -199,6 +199,27 @@
     }
 }
 
+@media (max-width: 475px) {
+    .modal {
+        width: 360px;
+        .feed-form {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .modal {
+        width: 330px;
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}
+
 @media (max-width: 375px) {
     .container {
         width: 300px;
@@ -266,6 +287,15 @@
             width: 300px;
             padding-left: 30px;
             padding-right: 30px;
+        }
+    }
+    .modal {
+        width: 320px;
+        padding-left: 30px;
+        padding-right: 30px;
+        &__close {
+            top: -35px;
+            right: 10px;
         }
     }
 
