@@ -10,4 +10,14 @@
         color: $contrast-text;
         margin-top: 70px;
     }
+    .error {
+        border: 1px solid $main-color;
+        font-size: 14px;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+        color: #fff;
+    }
 }
