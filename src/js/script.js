@@ -89,4 +89,34 @@ $(document).ready(function () {
     valideForms('#order form');
 
     $('input[name=phone]').mask("+7 (999) 999-99-99")
+
+    $('form').submit(function () {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+
+
+            $('form').trigger('rest');
+        });
+        return false;
+    });
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.page-up').fadeIn();
+        } else {
+            $('.page-up').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function () {
+        var _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
 });
