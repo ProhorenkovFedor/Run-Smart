@@ -27,4 +27,13 @@
             color: $main-color;
         }
     }
+    &__icon {
+        animation-name: heartbeat;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }

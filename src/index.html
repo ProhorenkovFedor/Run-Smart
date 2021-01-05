@@ -9,6 +9,7 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -71,7 +72,7 @@
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
                 </div>
                 <div class="advantages__item">
-                    <img src="img/icon-heart.png" alt="heart">
+                    <img class="advantages__icon" src="img/icon-heart.png" alt="heart">
                     <h3 class="advantages__subheader">Заботимся о здоровье</h3>
                     <p class="advantages__description">Мы работаем для того,
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -314,7 +315,8 @@
         <div class="container">
             <h2 class="block-header">Отзывы клиентов</h2>
             <ul class="rewiew__list">
-                <li class="rewiew__item">
+                <li class="rewiew__item animate__animated animate__fadeInUp wow" data-wow-duration="2s"
+                    data-wow-delay="1s">
                     <div class="rewiew__wrap">
                         <img class="rewiew__img" src="img/feedback1.png" alt="author photo" width="170" height="170">
                     </div>
@@ -330,40 +332,41 @@
                     </div>
                 </li>
                 <hr>
-                <li class="rewiew__item">
-                    <div class="rewiew__wrap">
-                        <img class="rewiew__img" src="img/feedback2.png" alt="author photo" width="170" height="170">
-                    </div>
-                    <div class="rewiew__info">
-                        <p class="rewiew__author">Иван Сёмочкин</p>
-                        <p class="rewiew__subtitle">1 полумарафон</p>
-                        <p class="rewiew__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже
-                            себе делал.
-                            Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую
-                            тренировку, научили пользоваться новым
-                            гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.</p>
-                        <p class="rewiew__text">С ними подготовился к своему первому полумарафону! Спасибо!!!</p>
-                    </div>
-                </li>
-                <hr>
-                <li class="rewiew__item">
-                    <div class="rewiew__wrap">
-                        <img class="rewiew__img" src="img/feedback3.png" alt="author photo" width="170" height="170">
-                    </div>
-                    <div class="rewiew__info">
-                        <p class="rewiew__author">Юлия Дашкина</p>
-                        <p class="rewiew__subtitle">2 полумарафона</p>
-                        <p class="rewiew__text">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но
-                            становилось тяжело и я бросала. От друзей
-                            услышала о RunSmart и о беге с контролем пульса и решила попробовать.</p>
-                        <p class="rewiew__text">Позвонила, ребята поинтересовались моими целями и подобрали очень
-                            интересный вариант со скидкой! Теперь бегаю и
-                            наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не
-                            намерена останавливаться!</p>
-                        <p class="rewiew__text">Спасибо!!!</p>
-                    </div>
-                </li>
-            </ul>
+                <li class="rewiew__item animate__animated animate__fadeInUp wow data-wow-duration=" 2s"
+                    data-wow-delay="1s"">
+                    <div class=" rewiew__wrap">
+                    <img class="rewiew__img" src="img/feedback2.png" alt="author photo" width="170" height="170">
+        </div>
+        <div class="rewiew__info">
+            <p class="rewiew__author">Иван Сёмочкин</p>
+            <p class="rewiew__subtitle">1 полумарафон</p>
+            <p class="rewiew__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже
+                себе делал.
+                Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую
+                тренировку, научили пользоваться новым
+                гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.</p>
+            <p class="rewiew__text">С ними подготовился к своему первому полумарафону! Спасибо!!!</p>
+        </div>
+        </li>
+        <hr>
+        <li class="rewiew__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
+            <div class="rewiew__wrap">
+                <img class="rewiew__img" src="img/feedback3.png" alt="author photo" width="170" height="170">
+            </div>
+            <div class="rewiew__info">
+                <p class="rewiew__author">Юлия Дашкина</p>
+                <p class="rewiew__subtitle">2 полумарафона</p>
+                <p class="rewiew__text">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но
+                    становилось тяжело и я бросала. От друзей
+                    услышала о RunSmart и о беге с контролем пульса и решила попробовать.</p>
+                <p class="rewiew__text">Позвонила, ребята поинтересовались моими целями и подобрали очень
+                    интересный вариант со скидкой! Теперь бегаю и
+                    наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не
+                    намерена останавливаться!</p>
+                <p class="rewiew__text">Спасибо!!!</p>
+            </div>
+        </li>
+        </ul>
         </div>
     </section>
 
@@ -429,6 +432,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
